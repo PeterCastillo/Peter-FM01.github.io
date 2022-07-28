@@ -1,0 +1,98 @@
+body {
+    background-color:hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.container__seccition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.secction {
+    display: flex;   
+    border-radius: 0.6rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.secction img {
+    width: 14rem;
+    height: 21rem;
+    object-fit: cover;
+    border-radius: 0.9rem 0px 0px 0.9rem;
+}
+
+.secction__about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 18px;
+    width: 14rem;
+    height: 18.5rem;
+    background-color:white;
+    border-radius: 0px  0.9rem 0.9rem 0px ;
+}
+
+.secction__about button {
+    width: 10rem;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.secction__about button:hover {
+    background-color: hsl(212, 21%, 20%);
+}
+
+.secction__about h1, .secction__about p{
+    margin: 0;
+    padding: 0;
+}
+
+.secction__about h1 {
+    font-family: Fraunces;
+}
+.secction__about__firs-span{
+    letter-spacing: 4px;
+} 
+
+.secction__about__div-prices--now {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-family: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.mobile {
+    display: none;
+}
+@media screen and (max-width:375px){
+    .desktop{
+        display: none;
+    }
+    .secction {
+        flex-direction: column;
+    }
+
+    .secction__about {
+        border-radius: 0px 0px 0.9rem 0.9rem ;
+    }
+
+    .secction img {
+        width: 16.5rem;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 0.9rem 0.9rem 0px 0px ;
+    }
+    
+    .mobile {
+        display: block;
+    }
+}
